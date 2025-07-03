@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Abir4127now+👋;AI+%26+ML+Engineer;Transformers+%26+LoRA+Specialist;Python+Problem+Solver" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Arifuzzamanjoy+👋;AI+%26+ML+Engineer;Transformers+%26+LoRA+Specialist;Python+Problem+Solver" alt="Typing SVG" />
 </div>
 
 ## 🧠 About Me
@@ -32,11 +32,11 @@ skills = {
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Abir4127now&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Arifuzzamanjoy&show_icons=true&theme=radical" alt="GitHub Stats" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abir4127now&theme=radical" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Arifuzzamanjoy&theme=radical" alt="GitHub Streak" />
 </div>
 
 ## 📫 Connect With Me
@@ -50,6 +50,6 @@ skills = {
 ---
 
 <div align="center">
-  <p>Last updated: 2025-07-03 16:00:56 UTC</p>
-  <img src="https://komarev.com/ghpvc/?username=Abir4127now&color=brightgreen" alt="Profile Views" />
+  <p>Last updated: 2025-07-03 16:08:48 UTC</p>
+  <img src="https://komarev.com/ghpvc/?username=Arifuzzamanjoy&color=brightgreen" alt="Profile Views" />
 </div>
