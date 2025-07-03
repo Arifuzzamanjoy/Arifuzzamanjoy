@@ -42,14 +42,18 @@ skills = {
 ## 📫 Connect With Me
 
 <div align="center">
-  <a href="mailto:your-email@example.com">
-    <img src="https://img.shields.io/badge/Email-Contact%20Me-blue" alt="Email" />
+  <a href="mailto:joy.apee@gmail.com">
+    <img src="https://img.shields.io/badge/Email-joy.apee@gmail.com-blue" alt="Email" />
+  </a>
+  &nbsp; &nbsp;
+  <a href="https://www.linkedin.com/in/arifuzzaman-joy-ru/">
+    <img src="https://img.shields.io/badge/LinkedIn-arifuzzaman--joy--ru-blue?logo=linkedin" alt="LinkedIn" />
   </a>
 </div>
 
 ---
 
 <div align="center">
-  <p>Last updated: 2025-07-03 16:08:48 UTC</p>
+  <p>Last updated: 2025-07-03 16:19:51 UTC</p>
   <img src="https://komarev.com/ghpvc/?username=Arifuzzamanjoy&color=brightgreen" alt="Profile Views" />
 </div>
