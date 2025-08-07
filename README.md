@@ -36,7 +36,8 @@ skills = {
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Arifuzzamanjoy&theme=radical" alt="GitHub Streak" />
+  <!-- Updated to use more reliable streak stats service -->
+  <img src="https://streak-stats.demolab.com/?user=Arifuzzamanjoy&theme=radical" alt="GitHub Streak" />
 </div>
 
 ## 📫 Connect With Me
@@ -54,6 +55,6 @@ skills = {
 ---
 
 <div align="center">
-  <p>Last updated: 2025-07-03 16:19:51 UTC</p>
+  <p>Last updated: 2025-08-07 10:44:50 UTC</p>
   <img src="https://komarev.com/ghpvc/?username=Arifuzzamanjoy&color=brightgreen" alt="Profile Views" />
 </div>
