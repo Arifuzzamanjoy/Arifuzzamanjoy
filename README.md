@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Arifuzzaman+Joy+👋;AI+Research+Scholar;ML+%26+Deep+Learning+Expert;Python+Automation+Specialist" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Arifuzzaman+Joy+👋;AI+Research+Scholar;ML+%26+Deep+Learning+Expert;Python+Automation+Specialist" alt="Typing SVG" />
 </div>
 
 <div align="center">
   
-  [![Email](https://img.shields.io/badge/Email-joy.apee@gmail.com-blue?style=for-the-badge&logo=gmail)](mailto:joy.apee@gmail.com)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-arifuzzaman--joy--ru-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/arifuzzaman-joy-ru/)
-  [![Profile Views](https://komarev.com/ghpvc/?username=Arifuzzamanjoy&color=brightgreen&style=for-the-badge)](https://github.com/Arifuzzamanjoy)
+  [![Email](https://img.shields.io/badge/Email-joy.apee@gmail.com-0078D4?style=for-the-badge&logo=gmail)](mailto:joy.apee@gmail.com)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-arifuzzaman--joy--ru-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/arifuzzaman-joy-ru/)
+  [![Profile Views](https://komarev.com/ghpvc/?username=Arifuzzamanjoy&color=0e75b6&style=for-the-badge)](https://github.com/Arifuzzamanjoy)
   
 </div>
 
@@ -27,7 +27,11 @@ I'm an **AI Research Scholar** specializing in developing and deploying ML model
       </ul>
     </td>
     <td width="40%">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arifuzzamanjoy&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="100%">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Arifuzzamanjoy&layout=compact&theme=dark&hide_border=true">
+        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Arifuzzamanjoy&layout=compact&theme=default&hide_border=true">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arifuzzamanjoy&layout=compact&theme=default&hide_border=true" alt="Top Languages" width="100%">
+      </picture>
     </td>
   </tr>
 </table>
@@ -85,10 +89,18 @@ I've published multiple papers in high-impact scientific journals (IF 4-7, Q1) f
   <table>
     <tr>
       <td width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=Arifuzzamanjoy&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" width="100%">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Arifuzzamanjoy&show_icons=true&theme=dark&hide_border=true">
+          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Arifuzzamanjoy&show_icons=true&theme=default&hide_border=true">
+          <img src="https://github-readme-stats.vercel.app/api?username=Arifuzzamanjoy&show_icons=true&theme=default&hide_border=true" alt="GitHub Stats" width="100%">
+        </picture>
       </td>
       <td width="50%">
-        <img src="https://streak-stats.demolab.com/?user=Arifuzzamanjoy&theme=radical&hide_border=true" alt="GitHub Streak" width="100%">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Arifuzzamanjoy&theme=dark&hide_border=true">
+          <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=Arifuzzamanjoy&theme=default&hide_border=true">
+          <img src="https://streak-stats.demolab.com/?user=Arifuzzamanjoy&theme=default&hide_border=true" alt="GitHub Streak" width="100%">
+        </picture>
       </td>
     </tr>
   </table>
@@ -104,6 +116,10 @@ I've published multiple papers in high-impact scientific journals (IF 4-7, Q1) f
 <hr>
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote">
-  <p>Last updated: 2025-08-07 10:56:08 UTC</p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=light">
+    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=light" alt="Random Dev Quote">
+  </picture>
+  <p>Last updated: 2025-09-17 08:11:23 UTC</p>
 </div>
