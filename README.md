@@ -14,7 +14,7 @@
 
 ## 🧠 About Me
 
-I'm an **AI & Machine Learning Engineer** specializing in end-to-end model development and deployment. With 7+ years of Python experience, I excel in fine-tuning models, building automated AI systems, and deploying cutting-edge ML/AI solutions. As a 5-star reviewed freelancer on Upwork and Fiverr, I focus on multi-modal data tasks and have published multiple papers in high-impact SCI journals.
+I'm an **AI & Machine Learning Engineer** specializing in end-to-end model development and deployment. With 7+ years of Python experience, I excel in fine-tuning models, building automated AI systems, and deploying cutting-edge ML/AI solutions.I focus on multi-modal data tasks and have published multiple papers in high-impact SCI journals.
 
 <table>
   <tr>
