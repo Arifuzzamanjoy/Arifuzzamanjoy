@@ -14,7 +14,7 @@
 
 ## 🧠 About Me
 
-I'm an **AI & Machine Learning Engineer** specializing in end-to-end model development and deployment. With 7+ years of Python experience, I excel in fine-tuning models, building automated AI systems, and deploying cutting-edge ML/AI solutions.I focus on multi-modal data tasks and have published multiple papers in high-impact SCI journals.
+I'm Arifuzzaman Joy, an AI Research Scholar and Machine Learning Expert with 6+ years of experience developing production-ready AI systems that drive measurable business outcomes. I specialize in transforming theoretical AI concepts into scalable, enterprise-grade solutions that optimize operations and create competitive advantages.
 
 <table>
   <tr>
