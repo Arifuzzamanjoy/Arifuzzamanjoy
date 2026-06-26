@@ -263,7 +263,6 @@ Low-cost, CPU-friendly self-hosting kit for local AI tooling with secure externa
 
 ## 🎓 Education & Certifications
 
-- 🎓 **M.Sc. Computer Science & Technology** — South China University of Technology *(CSC Scholarship, from 2026)*
 - 🎓 **B.Sc. Electrical & Electronic Engineering** — University of Rajshahi, Bangladesh
 - 🏅 Deep Learning with TensorFlow (IBM) · Prompt Engineering (Vanderbilt) · SQL Advanced (HackerRank)
 
