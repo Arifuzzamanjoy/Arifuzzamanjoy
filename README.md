@@ -1,4 +1,3 @@
-
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 <!--              ARIFUZZAMAN JOY · GITHUB PROFILE README                 -->
 <!--  Positioning: LLM & AI Agent Infrastructure Engineer                -->
@@ -6,7 +5,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3200&pause=900&color=58A6FF&center=true&vCenter=true&width=720&height=80&lines=Hi%2C+I'm+Arifuzzaman+Joy+%F0%9F%91%8B;LLM+%26+AI+Agent+Infrastructure+Engineer;RAG+%E2%80%A2+GPU+Deploy+%E2%80%A2+MLOps;Published+ML+Researcher+%E2%80%94+7+papers%2C+4+in+Q1" alt="Arifuzzaman Joy" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3200&pause=900&color=58A6FF&center=true&vCenter=true&width=720&height=80&lines=Hi%2C+I'm+Arifuzzaman+Joy+%F0%9F%91%8B;LLM+%26+AI+Agent+Infrastructure+Engineer;RAG+%E2%80%A2+GPU+Deploy+%E2%80%A2+MLOps;Published+ML+Researcher+%7C+7+papers%2C+3+in+Q1" alt="Arifuzzaman Joy" />
 
 <p>
   <a href="mailto:joy.apee@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
@@ -24,29 +23,35 @@
 
 ## 🛠️ What I Build
 
-I build the **infrastructure layer that makes LLM and AI-agent systems run in production** — reliably, on serverless/decentralized GPUs, at a fraction of managed-API cost. Published ML researcher (7 peer-reviewed papers, 4 in Q1 journals, IF up to **7.1**) who ships the hard part: multi-agent orchestration, RAG, and GPU deployment — not just notebooks.
+I build the **infrastructure layer that makes LLM and AI-agent systems run in production**, reliably, on serverless and decentralized GPUs, at a fraction of managed-API cost. Published ML researcher (7 peer-reviewed papers, 3 in Q1 journals) who ships the hard part: multi-agent orchestration, RAG, and GPU deployment, not just notebooks.
 
-- 🚀 **Production LLM / agent deployment** — RunPod · Modal · Vast.ai; Dockerized serverless endpoints with CI/CD, plus self-contained installers that survive real GPU-provider failures (driver mismatches, multi-GPU OOM, topology-aware placement)
-- 🧠 **Multi-agent systems with latent-space collaboration** — agents exchange hidden states instead of generated text → fewer tokens, faster inference *(open-sourced as LatentMAS-SLoRA)*
-- 📚 **RAG / document intelligence** — embedding retrieval, citation tracking, multi-hop reasoning, and LLM-as-judge evaluation
-- 🎛️ **Dynamic LoRA serving** — hot-swappable, domain-routed PEFT adapters on a single base model, with custom LoRA training built in
-- 💸 **Inference cost optimization** — meaningful GPU savings and ~$0 idle cost via serverless autoscaling
+- 🚀 **Production LLM / agent deployment** on RunPod, Modal, and Vast.ai. Dockerized serverless endpoints with CI/CD, plus self-contained installers that survive real GPU-provider failures (driver mismatches, multi-GPU OOM, topology-aware placement)
+- 🧠 **Multi-agent systems with latent-space collaboration**, where agents exchange hidden states instead of generated text, cutting tokens and inference time *(open-sourced as LatentMAS-SLoRA)*
+- 📚 **RAG / document intelligence**: embedding retrieval, citation tracking, multi-hop reasoning, and LLM-as-judge evaluation
+- 🎛️ **Dynamic LoRA serving**: hot-swappable, domain-routed PEFT adapters on a single base model, with custom LoRA training built in
+- 💸 **Inference cost optimization** through serverless autoscaling with near-zero idle cost
 
-> 📨 *Tell me your model and your latency / cost target — I reply within 2 hours.*
+> 📨 *Tell me your model and your latency or cost target, and I'll reply with a concrete plan.*
 
 ---
 
-## ⚡ Highlight — Production Open-Source GPU Infrastructure
+## ⚡ Highlight: Production Open-Source GPU Infrastructure
 
 <table>
 <tr><td>
 
-**[Osmantic / ODS](https://github.com/Osmantic/ODS)** — a production, self-hostable AI-deployment platform for local and decentralized GPUs.
-My contributions are **merged in upstream** ([16 PRs, 13 merged](https://github.com/Osmantic/ODS/pulls?q=is%3Apr+author%3AArifuzzamanjoy)) and span the hard infrastructure surface:
+**[Osmantic / ODS](https://github.com/Osmantic/ODS)** (4,000+ ⭐) is a production, self-hostable AI-deployment platform for local and decentralized GPUs.
+I've opened **[23 PRs, 14 merged upstream](https://github.com/Osmantic/ODS/pulls?q=is%3Apr+author%3AArifuzzamanjoy)** across the platform's schema, API, and deployment surface.
 
-- 🧰 **p2p-GPU installer toolkit for Vast.ai** — multi-phase, hardened Bash (`set -euo pipefail`, hard-fail ACLs), GPU-tier detection, and ~28 documented host-environment failure modes
-- 🩺 **TCP/CLI health-probe routing** — added `health_type: http|tcp|none` across schema, catalog generator, dashboard API & shell scripts, fixing silently-dropped non-HTTP services
-- 🔐 **Schema & security hardening** — `gpu_backends` validation, Docker Compose env-var hardening, shell-injection fixes across the extensions library
+**Merged into main:**
+- 🩺 **Node diagnostics endpoint** ([#1664](https://github.com/Osmantic/ODS/pull/1664)): `/api/node/capabilities` for runtime hardware and backend introspection
+- 🔐 **Schema and security hardening**: `gpu_backends` enum and validation ([#646](https://github.com/Osmantic/ODS/pull/646), [#675](https://github.com/Osmantic/ODS/pull/675)), compatibility blocks across 25 manifests ([#717](https://github.com/Osmantic/ODS/pull/717)), env-var defaults ([#716](https://github.com/Osmantic/ODS/pull/716), [#815](https://github.com/Osmantic/ODS/pull/815)), and Dockerfile version pinning ([#816](https://github.com/Osmantic/ODS/pull/816))
+- 🧪 **CI compatibility**: Draft7Validator migration for jsonschema 3.x ([#817](https://github.com/Osmantic/ODS/pull/817))
+
+**Open, in review:**
+- 🧰 **p2p-GPU installer toolkit for Vast.ai** ([#983](https://github.com/Osmantic/ODS/pull/983)): multi-phase hardened Bash (`set -euo pipefail`, hard-fail ACLs), GPU-tier detection, and ~28 documented host-environment failure modes
+- 🔌 **Non-HTTP health checks** ([#1343](https://github.com/Osmantic/ODS/pull/1343)): `health_type: http|tcp|none` across schema, catalog generator, dashboard API, and shell scripts, fixing silently-dropped TCP/CLI services
+- 📊 **GPU idle telemetry** ([#1663](https://github.com/Osmantic/ODS/pull/1663)) and **mesh mode groundwork** ([#2120](https://github.com/Osmantic/ODS/pull/2120))
 
 *Stack: Bash installer hardening · Docker Compose · GPU tier detection · FastAPI · pytest · ShellCheck · Vast.ai quirks*
 
@@ -55,7 +60,7 @@ My contributions are **merged in upstream** ([16 PRs, 13 merged](https://github.
 
 ---
 
-## 🏆 Featured Project — LatentMAS-SLoRA
+## 🏆 Featured Project: LatentMAS-SLoRA
 
 <table>
 <tr>
@@ -63,11 +68,13 @@ My contributions are **merged in upstream** ([16 PRs, 13 merged](https://github.
 
 ### 🧩 [LatentMAS-SLoRA](https://github.com/Arifuzzamanjoy/latent_mas_slora)
 
-**Officially featured as a community extension in [Gen-Verse / LatentMAS](https://github.com/Gen-Verse/LatentMAS#-5-latentmas-slora)** — the repo for the LatentMAS paper ([arXiv:2511.20639](https://arxiv.org/abs/2511.20639), 🤗 #1 Paper of the Day).
+**Featured as community extension #5 in [Gen-Verse / LatentMAS](https://github.com/Gen-Verse/LatentMAS#-5-latentmas-slora)**, the official repo for the ICML 2026 **Spotlight** paper *Latent Collaboration in Multi-Agent Systems* ([arXiv:2511.20639](https://arxiv.org/abs/2511.20639)). Listed alongside extensions from MIT's LAMM group.
 
-A multi-agent reasoning framework that augments LatentMAS with **role-specialized, dynamically switchable LoRA adapters** and **latent-space collaboration** — agents communicate through hidden states, not generated text. Includes VLM support (Qwen2.5-VL-7B), RAG integration, real evals, and RunPod serverless deployment with CI/CD.
+A multi-agent reasoning framework that augments LatentMAS with **role-specialized, dynamically switchable LoRA adapters** and **latent-space collaboration**, where agents communicate through hidden states rather than generated text. Includes VLM support (Qwen2.5-VL-7B), RAG integration, and RunPod serverless deployment with CI/CD.
 
-**Measured results:** +12% accuracy · 2.7× faster inference · 63.6% token reduction vs. traditional RAG.
+**Pipeline:** Planner → Critic (latent) → Refiner (latent) → Judger, with the Critic and Refiner operating purely in hidden-state space at ~200ms each.
+
+**On honesty about scope:** the repo documents exactly what it implements via PEFT (dynamic loading, hot-swapping, weighted merging, LRU eviction) and what it does *not* have versus true S-LoRA (no custom CUDA paging kernels, no heterogeneous batching). Benchmarks against vLLM S-LoRA are on the roadmap, not claimed as done.
 
 <p>
   <a href="https://github.com/Arifuzzamanjoy/latent_mas_slora"><img src="https://img.shields.io/badge/Code-181717?logo=github&logoColor=white" alt="GitHub"></a>
@@ -125,11 +132,11 @@ A multi-agent reasoning framework that augments LatentMAS with **role-specialize
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
 <img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=flat-square&logo=docker&logoColor=white">
 <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white">
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white">
 <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white">
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
-<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white">
 </p>
+<!-- REMOVED: Kubernetes + AWS badges. Re-add only if you can point to a public repo that uses them.
+     Every other badge here maps to a visible artifact; these two didn't. -->
 
 **Languages & Data**
 <p>
@@ -149,7 +156,7 @@ A multi-agent reasoning framework that augments LatentMAS with **role-specialize
 <td width="50%" valign="top">
 
 ### 🤖 [LatentMAS-SLoRA](https://github.com/Arifuzzamanjoy/latent_mas_slora)
-Multi-agent reasoning with dynamic LoRA routing + latent-space collaboration. Featured in Gen-Verse/LatentMAS.
+Multi-agent reasoning with dynamic LoRA routing and latent-space collaboration. Featured in Gen-Verse/LatentMAS.
 `PyTorch` `PEFT` `Qwen2.5-VL` `RAG` `RunPod`
 
 </td>
@@ -164,15 +171,15 @@ Retrieval pipeline over URL/JSON/CSV docs with citation tracking and automated L
 <tr>
 <td width="50%" valign="top">
 
-### ⚡ [Flux.2 Klein Serverless Worker](https://github.com/Arifuzzamanjoy/flux2kleinserverless)
-Serverless RunPod worker for FLUX.2 Klein text-to-image / image-to-image — $0 idle, autoscaled.
+### ⚡ [FLUX.2 klein Serverless Worker](https://github.com/Arifuzzamanjoy/flux2kleinserverless)
+Serverless RunPod worker for FLUX.2 [klein] text-to-image and image-to-image, autoscaled with near-zero idle cost.
 `RunPod` `Serverless` `Docker` `Flux`
 
 </td>
 <td width="50%" valign="top">
 
 ### 🧱 [Diffusion Serverless Ecosystem](https://github.com/Arifuzzamanjoy/image_diffusion_ecosystem_serverlesss)
-End-to-end serverless inference ecosystem for diffusion models with Dockerized endpoints + CI/CD.
+End-to-end serverless inference ecosystem for diffusion models with Dockerized endpoints and CI/CD.
 `Serverless` `Docker` `CI/CD` `Diffusers`
 
 </td>
@@ -188,7 +195,7 @@ Topology-aware multi-GPU pipeline with per-GPU VRAM capping (multi-GPU OOM fix) 
 <td width="50%" valign="top">
 
 ### 🖼️ [Flux LoRA Generation Studio](https://github.com/Arifuzzamanjoy/Flux.2-dev-gradio-ui-runpod-A40-48-vram--H200-vram-)
-Self-hosted Flux LoRA platform tuned for A40 (48 GB) → H200, with 4-bit quantization & batch inference.
+Self-hosted Flux LoRA platform tuned for A40 (48 GB) through H200, with 4-bit quantization and batch inference.
 `Flux` `LoRA` `CUDA` `Gradio`
 
 </td>
@@ -197,7 +204,7 @@ Self-hosted Flux LoRA platform tuned for A40 (48 GB) → H200, with 4-bit quanti
 <td width="50%" valign="top">
 
 ### 🎙️ [Whisper Serverless Worker](https://github.com/Arifuzzamanjoy/worker-whisper)
-Serverless speech-to-text worker — scalable transcription endpoint on demand.
+Serverless speech-to-text worker, a scalable transcription endpoint on demand.
 `Whisper` `RunPod` `Serverless`
 
 </td>
@@ -212,7 +219,7 @@ Low-cost, CPU-friendly self-hosting kit for local AI tooling with secure externa
 </table>
 
 <details>
-<summary><b>More projects — LoRA training, NLP fine-tuning & low-VRAM inference</b></summary>
+<summary><b>More projects: LoRA training, NLP fine-tuning, and low-VRAM inference</b></summary>
 
 <br>
 
@@ -221,7 +228,7 @@ Low-cost, CPU-friendly self-hosting kit for local AI tooling with secure externa
 | [Lora_Trainer_Imgen_Flux](https://github.com/Arifuzzamanjoy/Lora_Trainer_Imgen_Flux) | Custom LoRA training pipeline for Flux image models | `PEFT` `Flux` |
 | [bangladeshi-tts-finetuning](https://github.com/Arifuzzamanjoy/bangladeshi-tts-finetuning) | Fine-tuning TTS for Bangla speech | `TTS` `Fine-tuning` |
 | [bangla-punctuation-restoration](https://github.com/Arifuzzamanjoy/bangla-punctuation-restoration) | Transformer-based punctuation restoration for Bangla | `NLP` `Transformers` |
-| [time-series forecasting (SOTA)](https://github.com/Arifuzzamanjoy/time-_series_forcasting_state-_of-_the_art) | State-of-the-art time-series forecasting models | `PyTorch` `Forecasting` |
+| [time-series forecasting](https://github.com/Arifuzzamanjoy/time-_series_forcasting_state-_of-_the_art) | Modern time-series forecasting models | `PyTorch` `Forecasting` |
 | [Wan2GP](https://github.com/Arifuzzamanjoy/Wan2GP) | Low-VRAM video generation for consumer GPUs | `PyTorch` `Gradio` |
 | [Ltx-Image-to-Video](https://github.com/Arifuzzamanjoy/Ltx-Image-to-Video-GradioInterface) | Image-to-video generation with a Gradio interface | `LTX` `Gradio` |
 
@@ -231,19 +238,25 @@ Low-cost, CPU-friendly self-hosting kit for local AI tooling with secure externa
 
 ## 🔬 Research & Publications
 
-> 7 peer-reviewed papers · 4 in Q1 SCI journals (IF up to 7.1) · [Google Scholar](https://scholar.google.com/citations?user=MGxpI3sAAAAJ&hl=en) · [ORCID](https://orcid.org/0009-0005-2420-6585) · [ResearchGate](https://www.researchgate.net/profile/Arifuzzaman-Joy)
+> 7 peer-reviewed papers · 3 in Q1 journals · [Google Scholar](https://scholar.google.com/citations?user=MGxpI3sAAAAJ&hl=en) · [ORCID](https://orcid.org/0009-0005-2420-6585) · [ResearchGate](https://www.researchgate.net/profile/Arifuzzaman-Joy)
 
-| # | Paper | Venue | IF · Quartile | Year | Link |
-|---|-------|-------|:---:|:---:|------|
-| 1 | Machine-learning-assisted revelation of the best-performing single heterojunction thermophotovoltaic cell | *Sustainable Energy Technologies & Assessments* | **7.1 · Q1** | 2025 | [DOI](https://doi.org/10.1016/j.seta.2025.104264) · [arXiv](https://arxiv.org/abs/2408.01707) |
-| 2 | Machine-learning-enabled performance exploration of AuCuSe₄ in a thermophotovoltaic cell | *Solar Energy* | **6.0 · Q1** | 2024 | [DOI](https://doi.org/10.1016/j.solener.2024.112870) |
-| 3 | Numerical studies on a ternary AgInTe₂ chalcopyrite thin-film solar cell *(first author)* | *Heliyon* | **4.0 · Q1** | 2023 | [DOI](https://doi.org/10.1016/j.heliyon.2023.e19011) |
-| 4 | Numerical prediction of the photovoltaic performance of a CZTS-based thin-film solar cell | *Nano Select* | Q1 | 2023 | [DOI](https://doi.org/10.1002/nano.202200228) |
-| 5 | Unleashing the power of open-source transformers in medical imaging (brain MRI, ~99.6% acc.) | *IJACSA* | — | 2024 | [DOI](https://doi.org/10.14569/IJACSA.2024.01507126) |
-| 6 | Spectrum estimation for voiced speech using average weighted linear prediction | Speech processing | — | 2024 | [Profile](https://www.researchgate.net/profile/Arifuzzaman-Joy) |
-| 7 | Enhancement of bone-conducted speech using deep transfer learning | Speech processing | — | 2024 | [Profile](https://www.researchgate.net/profile/Arifuzzaman-Joy) |
+| # | Paper | Venue | Metrics | Year | Link |
+|---|-------|-------|:---|:---:|------|
+| 1 | Machine-learning-assisted revelation of the best-performing single heterojunction thermophotovoltaic cell | *Sustainable Energy Technologies & Assessments* (Elsevier) | JIF 7.4 · Q1 (Scopus) | 2025 | [DOI](https://doi.org/10.1016/j.seta.2025.104264) · [arXiv](https://arxiv.org/abs/2408.01707) |
+| 2 | Machine-learning-enabled performance exploration of AuCuSe₄ in a thermophotovoltaic cell | *Solar Energy* (Elsevier) | JIF ~6.0 · Q1 | 2024 | [DOI](https://doi.org/10.1016/j.solener.2024.112870) |
+| 3 | Numerical studies on a ternary AgInTe₂ chalcopyrite thin-film solar cell **(first author)** | *Heliyon* (Cell Press) | JIF ~3.5 · Q1 (Multidisciplinary) | 2023 | [DOI](https://doi.org/10.1016/j.heliyon.2023.e19011) |
+| 4 | Numerical prediction of the photovoltaic performance of a CZTS-based thin-film solar cell | *Nano Select* (Wiley) | JIF 3.5 · Q2 · ESCI | 2023 | [DOI](https://doi.org/10.1002/nano.202200228) |
+| 5 | Unleashing the power of open-source transformers in medical imaging (brain MRI: 99.60% classification accuracy, 0.90 Dice) | *IJACSA* | Peer-reviewed | 2024 | [DOI](https://doi.org/10.14569/IJACSA.2024.01507126) |
+| 6 | Spectrum estimation for voiced speech using average weighted linear prediction | *[ ]* | — | 2024 | * * |
+| 7 | Enhancement of bone-conducted speech using deep transfer learning | *[ ]* | — | 2024 | *[ ]* |
 
-<sub>*Research themes: applied ML for materials/PV optimization, medical-imaging transformers, and speech enhancement.*</sub>
+<sub>*Research themes: applied ML for materials and PV optimization, medical-imaging transformers, and speech enhancement. Journal metrics reflect the most recent JCR/Scopus release; quartile assignment varies by database and subject category.*</sub>
+
+<!-- ACTION REQUIRED on rows 6 and 7: these currently have no venue and no DOI, and don't
+     surface in literature search. Either fill in the venue + DOI, or relabel them as
+     "preprint" / "under review" and drop the headline count to 5. Leaving them
+     unsourced under a "peer-reviewed" heading is the single easiest thing for a
+     grad-admissions reviewer to challenge. -->
 
 ---
 
@@ -254,16 +267,12 @@ Low-cost, CPU-friendly self-hosting kit for local AI tooling with secure externa
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arifuzzamanjoy&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" alt="Top Languages">
 </div>
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Arifuzzamanjoy&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" height="165">
-</div>
-
 ---
 
 ## 🎓 Education & Certifications
 
-- 🎓 **B.Sc. Electrical & Electronic Engineering** — University of Rajshahi, Bangladesh
-- 🏅 Deep Learning with TensorFlow (IBM) · Prompt Engineering (Vanderbilt) · SQL Advanced (HackerRank)
+- 🎓 **B.Sc. Electrical & Electronic Engineering**, University of Rajshahi, Bangladesh (Solar Energy Laboratory)
+- 🏅 SQL Advanced and REST API Intermediate (HackerRank) · Deep Learning with TensorFlow (IBM) · Prompt Engineering (Vanderbilt)
 
 ---
 
@@ -273,7 +282,5 @@ Low-cost, CPU-friendly self-hosting kit for local AI tooling with secure externa
 
 <a href="mailto:joy.apee@gmail.com"><img src="https://img.shields.io/badge/Email-joy.apee%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
 <a href="https://www.linkedin.com/in/arifuzzaman-joy-ru/"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-
-<sub><i>"The best way to predict the future is to create it." — Alan Kay</i></sub>
 
 </div>
