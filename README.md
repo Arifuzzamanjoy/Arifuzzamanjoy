@@ -41,9 +41,8 @@ I build the **infrastructure layer that makes LLM and AI-agent systems run in pr
 <table>
 <tr><td>
 
-**[Light-Heart-Labs / DreamServer](https://github.com/Light-Heart-Labs/DreamServer)** — a production, self-hostable AI-deployment platform for decentralized/serverless GPUs.
-
-My contributions are **merged in upstream** ([16 PRs, 13 merged](https://github.com/Light-Heart-Labs/DreamServer/pulls?q=is%3Apr+author%3AArifuzzamanjoy)) and span the hard infrastructure surface:
+**[Osmantic / ODS](https://github.com/Osmantic/ODS)** — a production, self-hostable AI-deployment platform for local and decentralized GPUs.
+My contributions are **merged in upstream** ([16 PRs, 13 merged](https://github.com/Osmantic/ODS/pulls?q=is%3Apr+author%3AArifuzzamanjoy)) and span the hard infrastructure surface:
 
 - 🧰 **p2p-GPU installer toolkit for Vast.ai** — multi-phase, hardened Bash (`set -euo pipefail`, hard-fail ACLs), GPU-tier detection, and ~28 documented host-environment failure modes
 - 🩺 **TCP/CLI health-probe routing** — added `health_type: http|tcp|none` across schema, catalog generator, dashboard API & shell scripts, fixing silently-dropped non-HTTP services
