@@ -12,7 +12,6 @@
   <a href="https://scholar.google.com/citations?user=MGxpI3sAAAAJ&hl=en"><img src="https://img.shields.io/badge/Scholar-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
   <a href="https://orcid.org/0009-0005-2420-6585"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID"></a>
   <a href="https://huggingface.co/Joyapeee"><img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"></a>
-  <img src="https://komarev.com/ghpvc/?username=Arifuzzamanjoy&color=0e75b6&style=flat-square&label=Profile+Views" alt="Profile Views">
 </p>
 
 </div>
@@ -23,7 +22,9 @@
 
 I get LLM and AI-agent systems running in production on serverless and rented GPUs, for a fraction of what the managed APIs cost.
 
-Most of my work sits in the unglamorous layer: the Dockerfile that actually builds, the installer that survives a Vast.ai box with the wrong driver, the health check that stops silently dropping services. I also do research (5 peer-reviewed papers, 75 citations), so I'm comfortable reading a paper on Monday and having it deployed by Friday.
+Most of what I do is unglamorous. The Dockerfile that actually builds. The installer that survives a Vast.ai box shipping the wrong driver. The health check that was quietly dropping half your services and nobody noticed for a month. I come from a research background too (5 peer-reviewed papers, 75 citations), which mostly means I can read a paper on Monday and have it deployed by Friday instead of bookmarking it.
+
+I care where this ends up. The work I take on tends to be in health, energy, education, or scientific tooling, and my own research has been in solar cell optimization and medical imaging. If you're building something that makes a dent, say so in the first message.
 
 **What I'm usually hired for:**
 
@@ -53,7 +54,7 @@ Most of my work sits in the unglamorous layer: the Dockerfile that actually buil
 - **Non-HTTP health checks** ([#1343](https://github.com/Osmantic/ODS/pull/1343)) — `health_type: http|tcp|none` across schema, catalog generator, dashboard API, and shell scripts, fixing services that were being silently dropped
 - **GPU idle telemetry** ([#1663](https://github.com/Osmantic/ODS/pull/1663)) and **mesh mode groundwork** ([#2120](https://github.com/Osmantic/ODS/pull/2120))
 
-Also merged upstream into [**casys-kaist/LLMServingSim**](https://github.com/casys-kaist/LLMServingSim/pull/59) (370 ⭐, KAIST research lab): an RTX 4090 profile bundle with validation for Llama-3.1-8B. Open PRs at [kvcache-ai/ktransformers](https://github.com/kvcache-ai/ktransformers/pulls?q=is%3Apr+author%3AArifuzzamanjoy) (19k ⭐) and [theam/facility](https://github.com/theam/facility/pull/197).
+Also merged upstream into [**casys-kaist/LLMServingSim**](https://github.com/casys-kaist/LLMServingSim/pull/59) (370 ⭐, KAIST research lab): an RTX 4090 profile bundle with validation for Llama-3.1-8B. Open PRs at [kvcache-ai/ktransformers](https://github.com/kvcache-ai/ktransformers/pulls?q=is%3Apr+author%3AArifuzzamanjoy) (19k ⭐).
 
 ---
 
@@ -258,18 +259,13 @@ Ongoing work on speech enhancement: [bone-conducted speech with neural networks]
 - **B.Sc. Electrical & Electronic Engineering**, University of Rajshahi, Bangladesh (Solar Energy Laboratory)
 - SQL Advanced and REST API Intermediate (HackerRank) · Deep Learning with TensorFlow (IBM) · Prompt Engineering (Vanderbilt)
 
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Arifuzzamanjoy&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&count_private=true&cache_seconds=86400" alt="GitHub Stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arifuzzamanjoy&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8&cache_seconds=86400" alt="Top Languages">
-</div>
-
 ---
 
 <div align="center">
 
 ### Got a model that needs to go live?
 
-Send me the model, the target latency, and the budget. I'll tell you what it takes.
+Send me the model, your latency target, and the budget. You'll get a straight answer about what it takes, including when the answer is that you don't need me.
 
 <a href="https://www.upwork.com/freelancers/arifuzzamanj2"><img src="https://img.shields.io/badge/Hire%20me%20on%20Upwork-6FDA44?style=for-the-badge&logo=upwork&logoColor=white" alt="Upwork"></a>
 <a href="mailto:joy.apee@gmail.com"><img src="https://img.shields.io/badge/joy.apee%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
