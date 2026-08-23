@@ -132,8 +132,6 @@ If that's what you're building, lead with it.
 | [Numerical prediction of PV performance of a CZTS-based thin-film solar cell](https://doi.org/10.1002/nano.202200228) | *Nano Select* (Wiley), Q2 | 2023 |
 | [Open-source transformers in medical imaging](https://doi.org/10.14569/IJACSA.2024.01507126) — brain MRI, 99.60% accuracy, 0.90 Dice | *IJACSA* | 2024 |
 
-Ongoing: speech enhancement with [neural networks](https://github.com/Arifuzzamanjoy/Bone-Conducted-Speech-Enhancement-With-Neural-Network) and [GANs](https://github.com/Arifuzzamanjoy/BoneGAN-Generative-Adversarial-Networks-for-Bone-Conducted-Speech) on bone-conducted audio, evaluated with SNR, PESQ, MOS.
-
 <sub>Quartiles follow the latest JCR/Scopus release and vary by database and subject category.</sub>
 
 **B.Sc. Electrical & Electronic Engineering**, University of Rajshahi (Solar Energy Laboratory). SQL Advanced and REST API Intermediate (HackerRank), Deep Learning with TensorFlow (IBM), Prompt Engineering (Vanderbilt).
