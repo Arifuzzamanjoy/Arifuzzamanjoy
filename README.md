@@ -134,7 +134,7 @@ If that's what you're building, lead with it.
 
 <sub>Quartiles follow the latest JCR/Scopus release and vary by database and subject category.</sub>
 
-**B.Sc. Electrical & Electronic Engineering**, University of Rajshahi (Solar Energy Laboratory). SQL Advanced and REST API Intermediate (HackerRank), Deep Learning with TensorFlow (IBM), Prompt Engineering (Vanderbilt).
+**B.Sc. Electrical & Electronic Engineering**, University of Rajshahi (AI & Solar Energy Laboratory). SQL Advanced and REST API Intermediate (HackerRank), Deep Learning with TensorFlow (IBM), Prompt Engineering (Vanderbilt).
 
 ---
 
