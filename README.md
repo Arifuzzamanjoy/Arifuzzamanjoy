@@ -17,6 +17,7 @@ Anyone can claim GPU experience. Here's what you can click on:
 
 | | |
 |---|---|
+| **Merged** into [vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni/pull/6783) | the vLLM project's omni-modality inference framework, 6.5k stars |
 | **14 PRs merged** into [Osmantic/ODS](https://github.com/Osmantic/ODS/pulls?q=is%3Apr+author%3AArifuzzamanjoy) | a 4.6k-star self-hosted AI server platform |
 | **Merged** into [casys-kaist/LLMServingSim](https://github.com/casys-kaist/LLMServingSim/pull/59) | LLM-serving simulator from a KAIST research lab |
 | **Featured extension** in [Gen-Verse/LatentMAS](https://github.com/Gen-Verse/LatentMAS#-5-latentmas-slora) | official repo of an ICML 2026 Spotlight paper |
@@ -65,6 +66,14 @@ The README is also explicit about what it *isn't*: PEFT-based adapter management
 Vast.ai and similar marketplaces hand you a box that is *technically* the GPU you paid for and broken in a dozen quiet ways. Wrong driver, missing ACLs, a container runtime that isn't wired up.
 
 I wrote a multi-phase hardened installer for it: `set -euo pipefail` throughout, hard-fail ACL checks, GPU-tier detection, and roughly 28 documented host-environment failure modes with the fix for each. That documentation was most of the value. Anyone can write the happy path.
+
+---
+
+## Right now
+
+**Merged into vLLM's omni-modality framework** — [`build_engine_args_dict` was mutating the caller's `stage_config.engine_args`](https://github.com/vllm-project/vllm-omni/pull/6783), so engine args leaked from one pipeline stage into the next. A one-line `deepcopy` fix and 145 lines of tests covering idempotency and nested-dict isolation. The fix is trivial. Proving it stays fixed isn't.
+
+**[wacrm](https://github.com/Arifuzzamanjoy/wacrm)** — turning a self-hostable WhatsApp CRM (Next.js 16, Supabase) into a vertical for immigration consultancies: automated expiry and compliance monitoring, interactive WhatsApp eligibility and CRS-calculator flows, and account-authored document checklists.
 
 ---
 
