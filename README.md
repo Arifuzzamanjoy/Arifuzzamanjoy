@@ -20,9 +20,10 @@ Upwork Top Rated · 100% Job Success
 
 My main open-source focus: keeping voice-cloning TTS correct under concurrency.
 
-- **Merged** [#8456](https://github.com/vllm-project/vllm-omni/pull/8456): the CosyVoice3 benchmark now takes multiple reference voices, so it can catch cross-request voice leaks.
-- **Found** [#8235](https://github.com/vllm-project/vllm-omni/issues/8235): CosyVoice3 returned 11.7 to 25% wrong voices at concurrency 8 (fixed in #8224).
-- **Cited** in the [Q4 roadmap discussion](https://github.com/vllm-project/vllm-omni/issues/8264#issuecomment-6143181659) as the basis for a [nightly cross-request voice check](https://github.com/vllm-project/vllm-omni/issues/8555).
+- **Found** [#8235](https://github.com/vllm-project/vllm-omni/issues/8235): CosyVoice3 returned 11.7 to 25% wrong voices at concurrency 8 (fixed in [#8224](https://github.com/vllm-project/vllm-omni/pull/8224)).
+- **Merged** [#8456](https://github.com/vllm-project/vllm-omni/pull/8456): the benchmark now takes multiple reference voices, so mixed-voice batches can expose cross-request leaks.
+- **CI check:** [#8555](https://github.com/vllm-project/vllm-omni/issues/8555) adds a nightly cross-request voice check for voice-cloning TTS, built on #8456. The missing piece is verifying who is actually speaking, which my speaker-embedding verifier (`cv3_verify`) does.
+- **Cited** in the [Q4 roadmap discussion](https://github.com/vllm-project/vllm-omni/issues/8264#issuecomment-6143181659) as the basis for that nightly check.
 - **Merged** [#6783](https://github.com/vllm-project/vllm-omni/pull/6783): engine args leaked between pipeline stages. One-line fix, 145 lines of tests.
 
 ---
@@ -32,7 +33,6 @@ My main open-source focus: keeping voice-cloning TTS correct under concurrency.
 - [**Osmantic/ODS**](https://github.com/Osmantic/ODS/pulls?q=is%3Apr+author%3AArifuzzamanjoy): 14 PRs, including [health checks for non-HTTP services](https://github.com/Osmantic/ODS/pull/1343)
 - [**casys-kaist/LLMServingSim**](https://github.com/casys-kaist/LLMServingSim/pull/59): my profiling run exposed a KV-cache bug; after the fix, validation error fell from 87% to under 1%
 - [**aimclub/OSA**](https://github.com/aimclub/OSA) (2 PRs) and [**neka-nat/freecad-mcp**](https://github.com/neka-nat/freecad-mcp/pull/149)
-- [**Gen-Verse/LatentMAS**](https://github.com/Gen-Verse/LatentMAS#-5-latentmas-slora): featured extension #5 (ICML 2026 Spotlight repo)
 
 ---
 
@@ -48,9 +48,13 @@ My main open-source focus: keeping voice-cloning TTS correct under concurrency.
 ## Selected work
 
 **[LatentMAS-SLoRA](https://github.com/Arifuzzamanjoy/latent_mas_slora)**
-Agents pass hidden states instead of text, with role LoRA adapters switched on one base model. On GSM8K: 83.7% fewer output tokens and 5.5x faster than the text version, no significant accuracy difference (26 items). I also fixed a semantic router that was quietly deciding 199 of 200 routes: 51.3% to 96.2% accuracy on 450 labelled items. Limits are in the README: PEFT switching, not true S-LoRA, adapters not trained yet. [Demo.](https://www.youtube.com/watch?v=g7sxYjwgRRk)
+
+Extends [LatentMAS](https://arxiv.org/abs/2511.20639) (Princeton, UIUC, Stanford; ICML 2026 Spotlight). Listed as [community extension #5](https://github.com/Gen-Verse/LatentMAS#-5-latentmas-slora) in the official Gen-Verse repo.
+
+Agents pass hidden states instead of text, with role LoRA adapters switched on one base model. In my GSM8K run (26 items): 83.7% fewer output tokens and 5.5x faster than the text-based pipeline, no significant accuracy difference. I also fixed a semantic router that was quietly deciding 199 of 200 routes: 51.3% to 96.2% accuracy on 450 labelled items. Limits are in the README: PEFT switching, not true S-LoRA, adapters not trained yet. [Demo.](https://www.youtube.com/watch?v=g7sxYjwgRRk)
 
 **[Vast.ai installer](https://github.com/Osmantic/ODS/pull/983)**
+
 Hardened setup with 28 documented host failure modes. Not merged, kept as reference.
 
 ---
