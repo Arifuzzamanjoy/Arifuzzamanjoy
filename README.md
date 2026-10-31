@@ -18,7 +18,8 @@ Upwork Top Rated · 100% Job Success
 
 ## vLLM-Omni (7.1k stars)
 
-My main open-source focus: keeping voice-cloning TTS correct under concurrency.
+My main open-source focus: keeping per-request state correct in vLLM-Omni’s multi-stage serving.
+Voice references, LoRA adapters and engine args should never leak across requests or stages. I find these silent failures by measuring, then turn them into benchmarks and CI checks.
 
 - **Found** [#8235](https://github.com/vllm-project/vllm-omni/issues/8235): CosyVoice3 returned 11.7 to 25% wrong voices at concurrency 8 (fixed in [#8224](https://github.com/vllm-project/vllm-omni/pull/8224)).
 - **Merged** [#8456](https://github.com/vllm-project/vllm-omni/pull/8456): the benchmark now takes multiple reference voices, so mixed-voice batches can expose cross-request leaks.
