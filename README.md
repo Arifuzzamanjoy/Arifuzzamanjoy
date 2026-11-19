@@ -16,16 +16,15 @@ Upwork Top Rated · 100% Job Success
 
 ---
 
-## vLLM-Omni (7.1k stars)
+## 🔊 vLLM-Omni  — per-request state correctness
 
-My main open-source focus: keeping per-request state correct in vLLM-Omni’s multi-stage serving.
-Voice references, LoRA adapters and engine args should never leak across requests or stages. I find these silent failures by measuring, then turn them into benchmarks and CI checks.
+My main open-source focus: keeping per-request state correct in vLLM-Omni's multi-stage serving. Voice references, LoRA adapters, and engine args should never leak across requests or stages — I surface these silent failures by measuring them, then harden them into benchmarks and CI checks.
 
-- **Found** [#8235](https://github.com/vllm-project/vllm-omni/issues/8235): CosyVoice3 returned 11.7 to 25% wrong voices at concurrency 8 (fixed in [#8224](https://github.com/vllm-project/vllm-omni/pull/8224)).
-- **Merged** [#8456](https://github.com/vllm-project/vllm-omni/pull/8456): the benchmark now takes multiple reference voices, so mixed-voice batches can expose cross-request leaks.
-- **CI check:** [#8555](https://github.com/vllm-project/vllm-omni/issues/8555) adds a nightly cross-request voice check for voice-cloning TTS, built on #8456. The missing piece is verifying who is actually speaking, which my speaker-embedding verifier (`cv3_verify`) does.
-- **Cited** in the [Q4 roadmap discussion](https://github.com/vllm-project/vllm-omni/issues/8264#issuecomment-6143181659) as the basis for that nightly check.
-- **Merged** [#6783](https://github.com/vllm-project/vllm-omni/pull/6783): engine args leaked between pipeline stages. One-line fix, 145 lines of tests.
+- **Found** [#8235](https://github.com/vllm-project/vllm-omni/issues/8235) — CosyVoice3 served the wrong voice on 11.7–25% of requests at concurrency 8 (fixed in [#8224](https://github.com/vllm-project/vllm-omni/pull/8224)).
+- **Merged** [#8456](https://github.com/vllm-project/vllm-omni/pull/8456) — extended the benchmark to accept multiple reference voices, so mixed-voice batches can expose cross-request leaks.
+- **Merged** [#8689](https://github.com/vllm-project/vllm-omni/pull/8689) — the nightly cross-request voice check proposed in [#8555](https://github.com/vllm-project/vllm-omni/issues/8555): my speaker-embedding verifier (`cv3_verify`) confirms *who* is actually speaking in each response.
+- **Cited** in the [Q4 roadmap](https://github.com/vllm-project/vllm-omni/issues/8264#issuecomment-6143181659) as the basis for that nightly check.
+- **Merged** [#6783](https://github.com/vllm-project/vllm-omni/pull/6783) — engine args leaked between pipeline stages; one-line fix, 145 lines of tests.
 
 ---
 
